@@ -13,6 +13,11 @@ h1, h2, h3, h4, h5, h6, p {
     padding: 0;
 }
 
+a {
+    text-decoration: underline;
+    color: black;
+}
+
 /* Media Queries */
 @media (width <= 768px) {
     .nav-menu-mobile-links {
@@ -581,6 +586,7 @@ h1, h2, h3, h4, h5, h6, p {
         margin-left: auto;
         margin-right: auto;
         padding: 20px;
+        width: 100%;
     }
     
     .solutions-title {
@@ -603,7 +609,7 @@ h1, h2, h3, h4, h5, h6, p {
         align-items: left;
         flex-direction: column;
         max-width: 500px;
-        gap: 20px;
+        width: 50%;
     }
     
     .solution-card {
@@ -642,13 +648,13 @@ h1, h2, h3, h4, h5, h6, p {
         font-size: 1.2rem;
         font-weight: normal;
         font-family: 'Merriweather', serif;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
     }
     
     .solution-card-description {
         font-size: 1rem;
         font-weight: normal;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
     }
     
     .solution-card-button {
@@ -1077,7 +1083,9 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .companies-content-list-item img {
-    width: 300px;
+    max-width: 250px;
+    max-height: 300px;
+    min-width: 200px;
 }
 
 .anchorclick-container {
@@ -1107,3 +1115,94 @@ h1, h2, h3, h4, h5, h6, p {
     font-size: 1rem;
     font-weight: normal;
 }
+
+.partner-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.partner-content-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    height: 100%;
+    width: 100%;
+}
+
+.partner-title {
+    font-size: 2rem;
+    font-weight: normal;
+    font-family: 'Merriweather', serif;
+    margin-bottom: 20px;
+}
+
+.partner-description {
+    font-size: 1rem;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+.partner-button {
+    background-color: black;
+    padding: 10px 20px;
+    border-radius: 999px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.partner-button:hover {
+    background-color: #3952b8;
+    color: white;
+}
+
+.partners-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.partners-content-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.partners-title {
+    font-size: 2rem;
+    font-weight: normal;
+    font-family: 'Merriweather', serif;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.partners-description {
+    font-size: 1rem;
+    font-weight: normal;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.partners-list {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    flex-direction: column;
+}
+
+
+
+
