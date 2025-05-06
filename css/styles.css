@@ -952,6 +952,84 @@ h1, h2, h3, h4, h5, h6, p {
     margin-bottom: 10px;
 }
 
+.book-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.book-content-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 500px;
+    flex-direction: column;
+    width: 100%;
+}
+
+.book-title {
+    font-size: 2rem;
+    font-weight: normal;
+    font-family: 'Merriweather', serif;
+    margin-bottom: 20px;
+}
+
+.book-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.book-form-group {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+}
+
+.book-form-group label {
+    font-size: 1rem;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+.book-form-group input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #d0d0d0;
+}
+
+.book-form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #d0d0d0;
+}
+
+.book-form-group button {
+    background-color: black;
+    padding: 10px 20px;
+    border-radius: 999px;
+    color: white;
+    font-weight: bold;
+    width: 100px;
+}
+
+.book-form-group button:hover {
+    background-color: #3952b8;
+    color: white;
+}
+
+
+
 
 
 .companies-container {
