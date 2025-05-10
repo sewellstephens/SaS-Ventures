@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="icon" href="/media/images/fav-1.png">
+    <link rel="apple-touch-icon" href="/media/images/fav-1.png">
+    <script src="/js/script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="nav-container">
+        <div class="nav-content-container">
+        <div class="nav-logo">
+            <a href="/">
+                <img src="/media/images/logo.png" alt="SaS Ventures Logo">
+            </a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="/companies">Companies</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/partner">Partner</a></li>
+        </ul>
+        <div class="nav-btn">
+            <a href="/book">Book a meeting</a>
+        </div>
+        <div class="nav-menu-mobile">
+            <div class="hamburger" onclick="toggleMenu()">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <div class="nav-menu-mobile-links">
+                <ul>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/partner">Partner</a></li>
+                    <li><a href="/companies">Companies</a></li>
+                    <li><a href="/book">Book a Meeting</a></li>
+                </ul>
+            </div>
+            </div>
+        </div>
+    </nav>
+
+    {{ content | safe }}
+
+    <section class="footer-container">
+        <div class="footer-content-container">
+
+            <div class="footer-content-block">
+                <img src="/media/images/logo.png" class="footer-logo" alt="SaS Ventures Logo">
+            </div>
+            <div class="footer-content-block">
+                <h3>Company</h3>
+                <ul>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/partner">Partner</a></li>
+                    <li><a href="/companies">Companies</a></li>
+                </ul>
+            </div>
+            <div class="footer-content-block">
+                <h3>Legal</h3>
+                <ul>
+                    <li><a href="/terms">Terms</a></li>
+                    <li><a href="/privacy">Privacy</a></li>
+                </ul>
+            </div>
+            <div class="footer-content-block">
+                <h3>Follow us</h3>
+                <a href="https://www.linkedin.com/company/sas-ventures-on/"><img src="/media/icons/linkedin.svg"  class="footer-icon" alt="LinkedIn"></a>
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div class="footer-bottom-container">
+            <div class="footer-text-container">
+                <p class="footer-text">Copyright © 2025 SaS Ventures. All rights reserved.</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
